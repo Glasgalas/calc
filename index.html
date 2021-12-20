@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Calc</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" action="">
+        <div class="wrap">
+          <div class="label">
+            <label for="numFirst">Введите первое число:</label>
+          </div>
+          <input
+            type="number"
+            id="numFirst"
+            name="numFirst"
+            placeholder="Введите любое целое число"
+            required
+          />
+        </div>
+        <div class="wrap">
+          <div class="label">
+            <label for="mathSelect">Выберите операцию:</label>
+          </div>
+          <select class="select" name="mathSelect" id="mathSelect">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+          </select>
+        </div>
+        <div class="wrap">
+          <div class="label">
+            <label for="numSecond">Введите второе число:</label>
+          </div>
+          <input
+            type="number"
+            id="numSecond"
+            name="numSecond"
+            required
+            placeholder="Введите любое целое число"
+          />
+        </div>
+        <div class="buttons">
+          <button id="submit" type="submit">Получить ответ</button>
+          <button type="reset">Сбросить</button>
+        </div>
+      </form>
+
+      <div class="res">
+        <p id="result"></p>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
